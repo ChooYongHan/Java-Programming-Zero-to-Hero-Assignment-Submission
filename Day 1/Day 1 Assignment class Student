@@ -1,0 +1,35 @@
+package studentinformation;
+
+class Student{
+    int roll;
+    String name;
+    float marks;
+    
+ void input(int r, String n, float m){
+     
+     roll=r;
+     name=n;
+     marks=m;
+}
+ 
+ void display(){
+     System.out.println("Roll: " + roll + " " + "Name: " + name + " " + "Marks: "  +marks);
+ }
+}
+
+public class StudentInformation{
+    public static void main(String[] args){
+    Student s1 = new Student();
+    Student s2 = new Student();
+    Student s3 = new Student();
+
+    s1.input(001, "James", 75);
+    s2.input(002, "Helen", 80);
+    s3.input(003, "Hugo", 85);
+    
+    s1.display();
+    s2.display();
+    s3.display();
+        
+    }
+}
